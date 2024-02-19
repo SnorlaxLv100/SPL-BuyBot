@@ -14,7 +14,7 @@ async def bot_command(update: Update, context: CallbackContext):
     chat_type = update.effective_chat.type
     user_id = update.effective_chat.id
 
-    if chat_type != "private":
+    if chat_type != "private": 
         return
 
     active_bots = fetch_active_bots(user_id)
